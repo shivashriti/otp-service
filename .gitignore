@@ -1,0 +1,6 @@
+*.class
+*.cache
+.version
+.history/
+target/
+.idea
