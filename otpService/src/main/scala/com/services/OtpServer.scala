@@ -8,7 +8,7 @@ import org.http4s.server.blaze.BlazeBuilder
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.duration._
 
-object OtpServer extends StreamApp[IO] {
+class OtpServer extends StreamApp[IO] {
   val builder: BlazeBuilder[IO] =
     BlazeBuilder[IO]
         .bindHttp(8080, "0.0.0.0")
@@ -22,3 +22,5 @@ object OtpServer extends StreamApp[IO] {
       .serve
   }
 }
+
+object OtpServerMain extends OtpServer

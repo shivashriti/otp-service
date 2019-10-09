@@ -7,10 +7,10 @@ lazy val otpService = project.in(file("otpService"))
       "org.http4s" %% "http4s-core" % "0.18.21",
       "org.http4s" %% "http4s-blaze-server" % "0.18.21",
       "org.http4s" %% "http4s-dsl" % "0.18.21",
-      "org.http4s" %% "rho-swagger" % "0.18.0"
+      "org.http4s" %% "rho-swagger" % "0.18.0",
+      "org.scalatest" %% "scalatest" % "3.0.5" % Test
     )
-  )
-  .dependsOn(otpUtility)
+  ).dependsOn(otpUtility)
 
 
 lazy val otpUtility = project.in(file("otpUtility"))
