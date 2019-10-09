@@ -1,1 +1,2 @@
-Simple OTP generation and validation service
+### otp-service
+Simple otp generation and validation service
